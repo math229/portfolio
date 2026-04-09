@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <img src="assets/img/logo.png" alt="Logo TG" class="logo">
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+
+        <button class="btn-hire"><a href="#contact" class="btn-hire">Hire Me</a></button>
+
+        <!-- HAMBURGER (mobile) -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="hero">
+
+        <!-- CONTENU GAUCHE -->
+        <div class="hero-content">
+            <p class="greeting">Hi, I am</p>
+            <h1>Mathieu APITHY</h1>
+            <p class="subtitle">Front-end Developer / UI/UX Designer</p>
+
+            <!-- ICÔNES SOCIALES -->
+            <div class="socials">
+                <!-- Email -->
+                <a href="mailto:seglamathieuapithy@gmail.com" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/math229" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.577 9.577 0 0112 6.836a9.58 9.58 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/mathieuapithy" target="_blank" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://facebook.com/maturomathieu.apithy" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+                </a>
+            </div>
+
+            <!-- BOUTONS CTA -->
+            <div class="cta-group">
+            <button class="btn-hire-main"><a href="#contact" class="btn-hire">Hire Me</a></button>
+            <a href="assets/pdf/CV_Segla_Mathieu_Apithy.pdf" download="CV-Mathieu-APITHY.pdf" class="btn-cv">
+                Download CV
+            </a>
+            </div>
+
+            <!-- STATS -->
+            <div class="stats">
+            <div class="stat">
+                <div class="number">5+</div>
+                <div class="label">Years Exp.</div>
+                <div class="sublabel">Front-End</div>
+            </div>
+            <div class="stat">
+                <div class="number">20+</div>
+                <div class="label">Projects Done</div>
+                <div class="sublabel">UI/UX</div>
+            </div>
+            <div class="stat">
+                <div class="number">80+</div>
+                <div class="label">Happy Clients</div>
+                <div class="sublabel">International</div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHOTO DROITE -->
+        <div class="hero-photo">
+            <div class="photo-circle">
+            <img src="assets/img/photo.png" alt="Mathieu APITHY">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services reveal" id="services">
+
+        <div class="section-header">
+            <p class="section-sub">Ce que je fais</p>
+            <h2>Mes <span>Services</span></h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5V8h14v10zm-7-1l-4-4 1.4-1.4 2.6 2.6 5.6-5.6L19 11z"/></svg>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Conception d'interfaces modernes, intuitives et centrées sur l'expérience utilisateur.</p>
+                    <a href="#" class="service-link open-modal"
+                    data-title="UI/UX Design"
+                    data-desc="Conception d'interfaces modernes, intuitives et centrées sur l'expérience utilisateur pour maximiser l'engagement."
+                    data-features="Recherche utilisateur|Wireframes & Maquettes|Design UI moderne|Prototype interactif">
+                    En savoir plus →
+                </a>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            </div>
+            <h3>Développement Front-End</h3>
+            <p>Intégration de sites web responsives et performants avec HTML, CSS et JavaScript.</p>
+                <a href="#" class="service-link open-modal"
+                    data-title="Développement Front-End"
+                    data-desc="Intégration de sites web responsives et performants avec les dernières technologies web."
+                    data-features="HTML / CSS / JavaScript|React JS|Sites responsive|Optimisation performance">
+                    En savoir plus →
+                </a>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            </div>
+            <h3>Design de Logo</h3>
+            <p>Création d'identités visuelles uniques et mémorables adaptées à votre marque.</p>
+                <a href="#" class="service-link open-modal"
+                    data-title="Design de Logo"
+                    data-desc="Création d'identités visuelles uniques et mémorables adaptées à votre marque."
+                    data-features="Logo vectoriel|Charte graphique|Déclinaisons couleurs|Fichiers tous formats">
+                    En savoir plus →
+                </a>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+            </div>
+            <h3>Prototype & Wireframe</h3>
+            <p>Création de maquettes interactives pour valider vos idées avant le développement.</p>
+                <a href="#" class="service-link open-modal"
+                    data-title="Prototype & Wireframe"
+                    data-desc="Création de maquettes interactives pour valider vos idées avant le développement."
+                    data-features="Wireframes basse fidélité|Maquettes haute fidélité|Prototype cliquable|Tests utilisateurs">
+                    En savoir plus →
+                </a>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            </div>
+            <h3>SEO & Performance</h3>
+            <p>Optimisation de la vitesse et du référencement naturel pour maximiser votre visibilité.</p>
+                <a href="#" class="service-link open-modal"
+                    data-title="SEO & Performance"
+                    data-desc="Optimisation de la vitesse et du référencement naturel pour maximiser votre visibilité en ligne."
+                    data-features="Audit SEO|Optimisation vitesse|Balises meta & structure|Suivi positionnement">
+                    En savoir plus →
+                </a>
+            </div>
+
+            <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>Suivi, mise à jour et support technique de vos projets web après livraison.</p>
+                <a href="#" class="service-link open-modal"
+                    data-title="Maintenance & Support"
+                    data-desc="Suivi, mise à jour et support technique de vos projets web après livraison."
+                    data-features="Mises à jour régulières|Correction de bugs|Sauvegardes|Support réactif">
+                    En savoir plus →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about reveal" id="about">
+
+        <div class="about-img">
+            <div class="about-circle">
+            <img src="assets/img/photo.png" alt="Mathieu APITHY">
+            </div>
+            <div class="about-exp">
+            <span class="exp-number">5+</span>
+            <span class="exp-text">Ans d'expérience</span>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p class="section-sub">Qui suis-je ?</p>
+            <h2>À propos de <span>moi</span></h2>
+            <p class="about-desc">
+            Je suis <strong>Mathieu APITHY</strong>, développeur Front-End et designer UI/UX passionné.
+            Je crée des expériences digitales modernes, performantes et centrées sur l'utilisateur.
+            Mon objectif est de transformer vos idées en interfaces élégantes et fonctionnelles.
+            </p>
+
+            <div class="about-info">
+                <div class="info-item">
+                    <span class="info-label">Nom</span>
+                    <span class="info-value">Mathieu APITHY</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <span class="info-value">seglamathieuapithy@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Localisation</span>
+                    <span class="info-value">Cotonou, Bénin</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Disponibilité</span>
+                    <span class="info-value disponible">Disponible</span>
+                </div>
+            </div>
+
+            <div class="cta-group">
+                <button class="btn-hire-main"><a href="#contact" class="btn-hire">Hire Me</a></button>
+                <a href="assets/pdf/CV_Segla_Mathieu_Apithy.pdf" download="CV-Mathieu-APITHY.pdf" class="btn-cv"> Download CV</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills reveal" id="skills">
+
+        <div class="section-header">
+            <p class="section-sub">Ce que je maîtrise</p>
+            <h2>Mes <span>Compétences</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <!-- BARRES DE PROGRESSION -->
+            <div class="skills-bars">
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>HTML / CSS</span>
+                    <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>React JS</span>
+                    <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>Figma / UI Design</span>
+                    <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>Adobe XD</span>
+                    <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                    <span>Git / GitHub</span>
+                    <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                <div class="skill-info">
+                    <span>MySQL</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- ICÔNES TECHNOLOGIES -->
+            <div class="skills-icons">
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <span>MySQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="portfolio reveal" id="portfolio">
+
+        <div class="section-header">
+            <p class="section-sub">Mes réalisations</p>
+            <h2>Mon <span>Portfolio</span></h2>
+        </div>
+
+        <!-- FILTRES -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">Application</button>
+        </div>
+
+        <!-- GRILLE PROJETS -->
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card" data-category="ui">
+            <div class="portfolio-img">
+                <img src="assets/img/projet1.png" alt="Projet 1">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">UI/UX</span>
+                <h3>Dashboard Admin</h3>
+            </div>
+            </div>
+
+            <div class="portfolio-card" data-category="web">
+            <div class="portfolio-img">
+                <img src="assets/img/projet2.jpg" alt="Projet 2">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">Web</span>
+                <h3>Site E-commerce</h3>
+            </div>
+            </div>
+
+            <div class="portfolio-card" data-category="app">
+            <div class="portfolio-img">
+                <img src="assets/img/projet3.png" alt="Projet 3">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">Application</span>
+                <h3>App Mobile Banking</h3>
+            </div>
+            </div>
+
+            <div class="portfolio-card" data-category="ui">
+            <div class="portfolio-img">
+                <img src="assets/img/projet4.png" alt="Projet 4">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">UI/UX</span>
+                <h3>Landing Page SaaS</h3>
+            </div>
+            </div>
+
+            <div class="portfolio-card" data-category="web">
+            <div class="portfolio-img">
+                <img src="assets/img/pojet5.png" alt="Projet 5">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">Web</span>
+                <h3>Portfolio Photographe</h3>
+            </div>
+            </div>
+
+            <div class="portfolio-card" data-category="app">
+            <div class="portfolio-img">
+                <img src="assets/img/projet6.png" alt="Projet 6">
+                <div class="portfolio-overlay">
+                <a href="#" class="overlay-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-tag">Application</span>
+                <h3>App Gestion RH</h3>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact reveal" id="contact">
+
+        <div class="section-header">
+            <p class="section-sub">Me contacter</p>
+            <h2>Travaillons <span>Ensemble</span></h2>
+        </div>
+
+        <div class="contact-container">
+
+                <!-- INFOS CONTACT -->
+                <div class="contact-info">
+
+                    <p class="contact-desc">
+                        Vous avez un projet en tête ? N'hésitez pas à me contacter.
+                        Je suis disponible pour des missions freelance et des collaborations.
+                    </p>
+
+                    <div class="contact-items">
+
+                        <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">seglamathieuapithy@gmail.com</span>
+                        </div>
+                        </div>
+
+                        <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.21 2.2z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Téléphone</span>
+                            <span class="contact-value">+229 01 51 25 35 82</span>
+                        </div>
+                        </div>
+
+                        <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Localisation</span>
+                            <span class="contact-value">Cotonou, Bénin</span>
+                        </div>
+                        </div>
+
+                    </div>
+
+                <!-- RÉSEAUX SOCIAUX -->
+                <div class="socials">
+                    <!-- Email -->
+                <a href="mailto:seglamathieuapithy@gmail.com" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/math229" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.577 9.577 0 0112 6.836a9.58 9.58 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/mathieuapithy" target="_blank" class="social-btn">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://facebook.com/maturomathieu.apithy" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+                </a>
+                </div>
+
+                </div>
+
+                <!-- FORMULAIRE -->
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="from_name" placeholder="Votre nom" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="from_email" placeholder="Votre email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Sujet" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Votre message" class="form-input form-textarea"></textarea>
+                    </div>
+                    <button class="btn-hire-main" id="send-btn" style="width: 100%;">Envoyer le message</button>
+                    <p id="form-status" style="margin-top: 12px; font-size: 14px; text-align: center;"></p>
+                </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+    <p>© 2026 <span>Mathieu APITHY</span>. Tous droits réservés.</p>
+    </footer>
+
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <!-- MODALE -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <ul class="modal-features" id="modalFeatures"></ul>
+            <a href="#contact" class="btn-hire-main modal-cta" id="modalCta">Me contacter</a>
+        </div>
+    </div>
+
+    <script>
+        // ── BARRES DE COMPÉTENCES ──
+        const bars = document.querySelectorAll('.skill-progress');
+        bars.forEach(bar => {
+            const target = bar.style.width;
+            bar.style.width = '0';
+            setTimeout(() => {
+            bar.style.width = target;
+            }, 300);
+        });
+
+        // ── FILTRE PORTFOLIO ──
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            portfolioCards.forEach(card => {
+                card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+            });
+            });
+        });
+
+        // ── HAMBURGER ──
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            hamburger.classList.remove('active');
+            });
+        });
+
+        // ── SCROLL ACTIF NAV ──
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+            });
+
+            navItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+            });
+
+            // ── BOUTON RETOUR EN HAUT ──
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 400) {
+            backToTop.classList.add('show');
+            } else {
+            backToTop.classList.remove('show');
+            }
+
+            // ── ANIMATION AU SCROLL ──
+            document.querySelectorAll('.reveal').forEach(el => {
+            const elTop = el.getBoundingClientRect().top;
+            if (elTop < window.innerHeight - 100) {
+                el.classList.add('visible');
+            }
+            });
+        });
+
+        // ── CLIC RETOUR EN HAUT ──
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+                // ── FORMULAIRE WHATSAPP ──
+        document.getElementById('send-btn').addEventListener('click', () => {
+        const status = document.getElementById('form-status');
+
+        const name    = document.getElementById('from_name').value.trim();
+        const email   = document.getElementById('from_email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Vérification champs vides
+        if (!name || !email || !message) {
+            status.style.color = '#FF6B1A';
+            status.textContent = '⚠️ Veuillez remplir tous les champs.';
+            return;
+        }
+
+        // Formatage du message WhatsApp
+        const text = `Bonjour Mathieu ! 👋
+
+        *Nom :* ${name}
+        *Email :* ${email}
+        *Sujet :* ${subject}
+        *Message :* ${message}`;
+
+        // Numéro WhatsApp (format international sans + ni espaces)
+        const phone = '2290151253582'; // ← ton numéro
+
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
+
+        // Vider les champs
+        status.style.color = '#4CAF50';
+        status.textContent = '✅ Redirection vers WhatsApp...';
+        document.getElementById('from_name').value = '';
+        document.getElementById('from_email').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('message').value = '';
+        });
+
+        // ── MODALE SERVICES ──
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalClose = document.getElementById('modalClose');
+
+        document.querySelectorAll('.open-modal').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Remplir la modale
+            document.getElementById('modalTitle').textContent = link.dataset.title;
+            document.getElementById('modalDesc').textContent = link.dataset.desc;
+
+            // Features
+            const features = link.dataset.features.split('|');
+            const featuresList = document.getElementById('modalFeatures');
+            featuresList.innerHTML = '';
+            features.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = f;
+            featuresList.appendChild(li);
+            });
+
+            // Ouvrir
+            modalOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+        });
+
+        // Fermer la modale
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeModal();
+        });
+
+        
+
+        // Fermer avec Echap
+        document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+        });
+
+        function closeModal() {
+        modalOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+        }
+
+        // Fermer la modale en cliquant sur Me contacter
+        document.getElementById('modalCta').addEventListener('click', closeModal);
+    </script>
+
+</body>
+</html>
